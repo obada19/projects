@@ -1,0 +1,27 @@
+﻿@model Guest
+
+
+
+<h2>Add Guests</h2>
+
+<p>@ViewBag.Message</p>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" placeholder="name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" placeholder="title">
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Message"></label>
+        <input asp-for="Message" class="form-control" placeholder="message">
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+
+    <button type="submit" id="Submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Pomodoro</string>
+    <string name="default_time_display">00:00:00</string>
+    <string name="startButtonText">Start</string>
+    <string name="btn60">60</string>
+    <string name="btn30">30</string>
+    <string name="btn90">90</string>
+    <string name="btn120">120</string>
+    <string name="SeekBar">set time</string>
+    <string name="progress">progress</string>
+    <string name="EditText">set reps</string>
+    <string name="show_text" />
+
+</resources>
