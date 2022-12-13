@@ -1,0 +1,20 @@
+@model IEnumerable<Guest>
+
+
+<H2>List of guests</H2>
+
+<table id="guests" class="table table-striped table-bordered">
+    <thead>
+    <tr><th>name</th><th>Title</th><th>Message</th></tr>
+    </thead>
+    <tbody>
+    <a asp-action="Add" asp-controller="Guestbook">press me</a>
+    @foreach (var guest in Model)
+    {
+        <tr>
+            <td>@guest.Name</td><td>@guest.Title</td><td>@guest.Message</td>
+        </tr>
+    }
+
+    </tbody>
+</table>

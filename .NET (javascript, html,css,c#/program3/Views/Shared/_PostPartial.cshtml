@@ -1,0 +1,24 @@
+﻿@model Post
+
+<tr>
+    <td class="Nickname">
+        @Html.DisplayFor(modelItem => Model.ApplicationUser.Nickname)
+    </td>
+    <td class="Title">
+        @Html.DisplayFor(modelItem => Model.Title)
+    </td>
+    <td class="Summary">
+        @Html.DisplayFor(modelItem => Model.Summary)
+    </td>
+    <td class="Content">
+        @Html.DisplayFor(modelItem => Model.Content)
+    </td>
+    <td class="Time">
+        @Model.Time.ToString("dd.MM.yyyy")
+    </td>
+            
+    <td>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+            
+    </td>
+</tr>

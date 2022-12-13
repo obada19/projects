@@ -1,0 +1,41 @@
+@model ViewModelPost
+
+@{
+    ViewData["Title"] = "Index";
+    
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Add">add/make New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Post.ApplicationUser.Nickname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Post.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Post.Summary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Post.Content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Post.Time)
+        </th>
+        
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Posts) {
+        
+        <partial name="_PostPartial" model = "item"/>
+    }
+    </tbody>
+</table>

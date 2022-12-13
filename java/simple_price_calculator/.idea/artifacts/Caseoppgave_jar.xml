@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Caseoppgave:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Caseoppgave_jar</output-path>
+    <root id="archive" name="Caseoppgave.jar">
+      <element id="module-output" name="Caseoppgave" />
+    </root>
+  </artifact>
+</component>

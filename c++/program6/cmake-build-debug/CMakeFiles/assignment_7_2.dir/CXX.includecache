@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/obada/ikt101g19h/assignments/solutions/assignment_7_2/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+
